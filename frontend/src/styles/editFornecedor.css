@@ -1,0 +1,209 @@
+.container-f-edit {
+  --max-width: 1440px;
+  --padding: 2rem;
+  --border-radius: 16px;
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 98%;
+  max-width: var(--max-width);
+  margin: 1rem auto;
+  padding: var(--padding);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  font-family: var(--font-family);
+}
+
+.container-f-edit h1 {
+  --margin-bottom: 0.5rem;
+  --font-size: 2rem;
+  margin-bottom: var(--margin-bottom);
+  color: #1f2937;
+  font-size: var(--font-size);
+  text-align: left;
+  font-weight: 700;
+}
+
+.form-container-edit {
+  --grid-template-columns: 1fr 1fr;
+  --gap: 2rem;
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  gap: var(--gap);
+}
+
+.left-side-edit,
+.right-side-edit {
+  --flex-direction: column;
+  --gap: 1.5rem;
+  display: flex;
+  flex-direction: var(--flex-direction);
+  gap: var(--gap);
+}
+
+.form-group-f-edit {
+  --flex-direction: column;
+  display: flex;
+  flex-direction: var(--flex-direction);
+}
+
+.form-group-f-edit label {
+  --font-weight: 600;
+  --margin-bottom: 0.5rem;
+  font-weight: var(--font-weight);
+  margin-bottom: var(--margin-bottom);
+  color: #374151;
+}
+
+.form-group-f-edit input {
+  --width: 100%;
+  --padding: 0.75rem 1rem;
+  --border-radius: 10px;
+  --font-size: 1rem;
+  --background-color: #f9fafb;
+  width: var(--width);
+  padding: var(--padding);
+  border: 1px solid #d1d5db;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+  background-color: var(--background-color);
+  transition: all 0.2s ease;
+}
+
+.form-group-f-edit input:focus {
+  --outline: none;
+  --border-color: #3b82f6;
+  --box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  --background-color: #fff;
+  outline: var(--outline);
+  border-color: var(--border-color);
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color);
+}
+
+.checkbox-group-edit {
+  --gap: 1rem;
+  --margin-top: 0.5rem;
+  display: flex;
+  gap: var(--gap);
+  margin-top: var(--margin-top);
+}
+
+.empresas-table-wrapper-edit {
+  --border: 1px solid #d1d5db;
+  --border-radius: 10px;
+  --background-color: #f9fafb;
+  --padding: 1rem;
+  overflow-x: auto;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  padding: var(--padding);
+}
+
+.empresas-table-edit {
+  --width: 100%;
+  width: var(--width);
+  border-collapse: collapse;
+}
+
+.empresas-table-edit thead th {
+  --background-color: #2563eb;
+  --color: white;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+.empresas-table-edit th,
+.empresas-table-edit td {
+  --padding: 0.75rem 1rem;
+  --text-align: left;
+  --border-bottom: 1px solid #e5e7eb;
+  padding: var(--padding);
+  text-align: var(--text-align);
+  border-bottom: var(--border-bottom);
+}
+
+.empresas-table-edit th {
+  --background-color: #f3f4f6;
+  --font-weight: 600;
+  --color: #374151;
+  background-color: var(--background-color);
+  font-weight: var(--font-weight);
+  color: var(--color);
+}
+
+.empresas-table-edit td {
+  --color: #4b5563;
+  color: var(--color);
+}
+
+.empresas-table-edit input[type='checkbox'] {
+  --transform: scale(1.2);
+  transform: var(--transform);
+}
+
+.button-group-edit {
+  --grid-column: span 2;
+  --justify-content: flex-end;
+  --gap: 1rem;
+  grid-column: var(--grid-column);
+  display: flex;
+  justify-content: var(--justify-content);
+  gap: var(--gap);
+  margin-top: 2rem;
+}
+
+.button-group-edit button {
+  --padding: 1rem;
+  --background-color: #3b82f6;
+  --color: #ffffff;
+  --border: none;
+  --border-radius: 10px;
+  --font-weight: 600;
+  --font-size: 1.05rem;
+  padding: var(--padding);
+  background-color: var(--background-color);
+  color: var(--color);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-group-edit button:hover {
+  --background-color: #2563eb;
+  background-color: var(--background-color);
+}
+
+.button-group-edit button.btn-clear-edit {
+  --background-color: #ef4444;
+  background-color: var(--background-color);
+}
+
+.button-group-edit button.btn-clear-edit:hover {
+  --background-color: #dc2626;
+  background-color: var(--background-color);
+}
+
+@media (max-width: 1024px) {
+  .form-container-edit {
+    --grid-template-columns: 1fr;
+    grid-template-columns: var(--grid-template-columns);
+  }
+
+  .button-group-edit {
+    --flex-direction: column;
+    --gap: 0.75rem;
+    flex-direction: var(--flex-direction);
+    gap: var(--gap);
+  }
+
+  .button-group-edit button {
+    --width: 100%;
+    width: var(--width);
+  }
+}

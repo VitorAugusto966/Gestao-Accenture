@@ -1,0 +1,127 @@
+.container-lista {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.tr-title {
+  color: white !important;
+}
+
+.tabela-wrapper {
+  overflow-x: auto;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.tabela thead {
+  background-color: #007bff;
+  color: #fff;
+}
+.tabela thead th {
+  background-color: transparent;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  color: #555;
+  border-bottom: 2px solid #e0e0e0;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.tabela tbody tr {
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+.tabela tbody tr:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.tabela td {
+  padding: 1.2rem;
+  vertical-align: middle;
+  border-bottom: 1px solid transparent;
+}
+
+.tabela td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tabela td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.tabela .acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: white;
+}
+
+.btn {
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.15s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.editar {
+  background-color: #4f98ff;
+  color: #fff;
+}
+
+.btn.editar:hover {
+  background-color: #377de4;
+}
+
+.btn.excluir {
+  background-color: #ff5c5c;
+  color: #fff;
+}
+
+.btn.excluir:hover {
+  background-color: #e04c4c;
+}
+
+.btn.vincular {
+  background-color: #43c17a;
+  color: #fff;
+}
+
+.btn.vincular:hover {
+  background-color: #32aa67;
+}
