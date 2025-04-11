@@ -33,7 +33,6 @@ Este é um sistema completo de gestão de empresas e fornecedores desenvolvido c
 
 - Listagem com filtros
 - Layout responsivo e moderno
-- Utilização de `localStorage` para preencher dados na navegação
 - Feedbacks visuais com `toast` para sucesso e erro
 
 ## ⚙️ Como Executar
